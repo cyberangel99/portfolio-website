@@ -1,0 +1,39 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "slug"
+      }
+    },
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "name",
+        "placeholder": "Author Name"
+      }
+    },
+    "location": {
+      "type": "Text",
+      "config": {
+        "label": "location"
+      }
+    },
+    "bio": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "allowTargetBlank": true,
+        "label": "bio"
+      }
+    },
+    "profile_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "profile_image"
+      }
+    }
+  }
+}
