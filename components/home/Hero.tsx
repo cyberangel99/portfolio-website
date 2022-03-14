@@ -8,7 +8,7 @@ export default function Hero() {
       alignItems="center"
       justifyContent="center"
       p={4}
-      background="linear-gradient(rgba(10, 10, 10,0.4),rgba(10, 10, 10,0.4)),
+      background="linear-gradient(rgba(10, 10, 10,0.2),rgba(10, 10, 10,0.2)),
         url(/images/hero-space.png) no-repeat center center / cover"
     />
   )
