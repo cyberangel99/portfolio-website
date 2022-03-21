@@ -11,7 +11,7 @@ export default function NavigationMenu() {
       <HStack justifyContent="center" alignItems="center">
         {MENU_ITEMS.map((hashItem) => (
           <Box key={hashItem.url}>
-            {!hashItem.children && (
+            {!hashItem && (
               <Link href={hashItem.url} passHref>
                 <a>
                   <Button
@@ -30,7 +30,7 @@ export default function NavigationMenu() {
                 </a>
               </Link>
             )}
-            {hashItem.children && (
+            {hashItem && (
               <Menu>
                 <MenuButton
                   as={Button}
@@ -47,15 +47,6 @@ export default function NavigationMenu() {
                 >
                   {hashItem.name.toUpperCase()}
                 </MenuButton>
-                <MenuList>
-                  {hashItem.children.map((child) => (
-                    <Link href={child.url} passHref key={child.name}>
-                      <a>
-                        <MenuItem>{child.name.toUpperCase()}</MenuItem>
-                      </a>
-                    </Link>
-                  ))}
-                </MenuList>
               </Menu>
             )}
           </Box>

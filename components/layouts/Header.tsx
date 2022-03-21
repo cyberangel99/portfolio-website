@@ -5,7 +5,8 @@ import {
   HStack,
   SimpleGrid,
   useColorModeValue,
-  useDisclosure
+  useDisclosure,
+  Heading
 } from '@chakra-ui/react'
 
 import { motion, useViewportScroll } from 'framer-motion'
@@ -30,7 +31,6 @@ export default function Header() {
   const [position, setPosition] = useState(scrollY.get())
   const navBg = useColorModeValue('gray.50', 'gray.800')
   const isSticky = position > 50
-
   useEffect(() => {
     setPosition(scrollY.get())
     scrollY.onChange((pos: number) => {
@@ -61,13 +61,17 @@ export default function Header() {
         <Container maxW="100%" p={0}>
           <PreviewBar />
           <SimpleGrid columns={{ base: 2 }} spacing={8} py={3} px={4}>
-            <Flex justifyContent="start" alignItems="start">
+            <Flex justifyContent="start" alignItems="center">
               <Link href="/" passHref>
                 <a>
                   <Logo height={isSticky ? '35px' : '50px'} />
                 </a>
               </Link>
+              <Heading as="h3" size="lg">
+                Mary Green's portfolio
+              </Heading>
             </Flex>
+
             <Flex alignItems="center" justifyContent="end">
               <HStack>
                 <Box display={{ base: 'none', lg: 'block' }}>
