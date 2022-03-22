@@ -67,9 +67,6 @@ export default function Header() {
                   <Logo height={isSticky ? '35px' : '50px'} />
                 </a>
               </Link>
-              <Heading as="h3" size="lg">
-                Mary Green's portfolio
-              </Heading>
             </Flex>
 
             <Flex alignItems="center" justifyContent="end">
@@ -77,7 +74,6 @@ export default function Header() {
                 <Box display={{ base: 'none', lg: 'block' }}>
                   <NavigationMenu />
                 </Box>
-                <ColorModeButton />
                 <MobileMenuButton onOpen={onOpen} />
               </HStack>
             </Flex>

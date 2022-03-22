@@ -35,7 +35,6 @@ export default function NavigationMenu() {
                 <MenuButton
                   as={Button}
                   my={0}
-                  rightIcon={<FiChevronDown />}
                   variant="ghost"
                   outline="none"
                   borderStyle="solid"
