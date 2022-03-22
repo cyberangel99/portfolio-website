@@ -10,11 +10,10 @@ export default function Hero() {
       alignItems="center"
       justifyContent="center"
       p={4}
-      pos="relative"
       background="linear-gradient(rgba(10, 10, 10,0.2),rgba(10, 10, 10,0.2)),
         url(/images/hero-space.png) no-repeat center center / cover"
     >
-      <Flex>
+      <Flex justifyContent="center" alignItems="center" h="full" w="full">
         <HeroNavigation />
       </Flex>
     </Flex>

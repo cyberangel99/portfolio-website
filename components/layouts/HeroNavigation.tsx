@@ -1,18 +1,21 @@
-import { Box, Menu, MenuItem, MenuList } from '@chakra-ui/react'
+import { Box, Link, Heading } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 import React from 'react'
 
+import { MENU_ITEMS } from '../../constants'
+
 function HeroNavigation() {
   return (
-    <Menu isOpen>
-      <MenuList>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>ABOUT</MenuItem>
-        <MenuItem>SKILLS</MenuItem>
-        <MenuItem>PROJECTS</MenuItem>
-        <MenuItem>CONTACT</MenuItem>
-      </MenuList>
-    </Menu>
+    <Box position="relative">
+      {MENU_ITEMS.map((item) => (
+        <NextLink key={item.name} href={item.url} passHref>
+          <Link>
+            <Heading>{item.name.toUpperCase()}</Heading>
+          </Link>
+        </NextLink>
+      ))}
+    </Box>
   )
 }
 
