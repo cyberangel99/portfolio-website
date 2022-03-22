@@ -1,40 +1,23 @@
-import { Box, Button, HStack, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Box, Button, HStack, Menu, MenuButton } from '@chakra-ui/react'
 import React from 'react'
-import { FiChevronDown } from 'react-icons/fi'
 
-import { MENU_ITEMS } from '../../constants'
+import { HASH_ROUTE_MENU_ITEMS } from '../../constants'
+import SmoothScrollLink from '../shared/SmoothScrollLink'
 
-export default function NavigationMenu() {
+export default function NavigationMenu({ isSticky }) {
+  const textColor = !isSticky ? 'gray.50' : 'purple.400'
+  const textBackground = !isSticky ? 'transparent' : 'gray.100'
   return (
     <Box bg="transparent" borderRadius={5} borderLeftRadius={0}>
       <HStack justifyContent="center" alignItems="center">
-        {MENU_ITEMS.map((hashItem) => (
-          <Box key={hashItem.url}>
-            {!hashItem && (
-              <Link href={hashItem.url} passHref>
-                <a>
-                  <Button
-                    my={0}
-                    variant="ghost"
-                    outline="none"
-                    borderStyle="solid"
-                    borderWidth={1}
-                    borderColor="transparent"
-                    size="sm"
-                    isActive={false}
-                    aria-label={hashItem.name.toUpperCase()}
-                  >
-                    {hashItem.name.toUpperCase()}
-                  </Button>
-                </a>
-              </Link>
-            )}
-            {hashItem && (
+        {HASH_ROUTE_MENU_ITEMS.map((hashItem) => (
+          <SmoothScrollLink to={hashItem.hash} scrollOffset={-50}>
+            <Box key={hashItem.hash}>
               <Menu>
                 <MenuButton
                   as={Button}
                   my={0}
+                  color={textColor}
                   variant="ghost"
                   outline="none"
                   borderStyle="solid"
@@ -43,12 +26,17 @@ export default function NavigationMenu() {
                   size="sm"
                   isActive={false}
                   aria-label={hashItem.name.toUpperCase()}
+                  _hover={{ color: 'purple.400', backgroundColor: 'gray.100' }}
+                  _active={{
+                    color: textColor,
+                    backgroundColor: textBackground
+                  }}
                 >
                   {hashItem.name.toUpperCase()}
                 </MenuButton>
               </Menu>
-            )}
-          </Box>
+            </Box>
+          </SmoothScrollLink>
         ))}
       </HStack>
     </Box>

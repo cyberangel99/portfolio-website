@@ -72,7 +72,7 @@ export default function Header() {
             <Flex alignItems="center" justifyContent="end">
               <HStack>
                 <Box display={{ base: 'none', lg: 'block' }}>
-                  <NavigationMenu />
+                  <NavigationMenu isSticky={isSticky} />
                 </Box>
                 <MobileMenuButton onOpen={onOpen} />
               </HStack>

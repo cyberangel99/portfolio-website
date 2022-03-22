@@ -47,7 +47,7 @@ export default function About() {
             </Text>
             <Divider my={8} />
             <HStack>
-              <SmoothScrollLink to={HASH_ROUTES.SERVICES}>
+              <SmoothScrollLink to={HASH_ROUTES.ABOUT}>
                 <Button colorScheme="accent" leftIcon={<FiChevronDown />}>
                   OUR SERVICES
                 </Button>
