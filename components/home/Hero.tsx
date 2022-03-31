@@ -1,6 +1,8 @@
 import { Flex, Box, Text, Heading, Icon } from '@chakra-ui/react'
 import React from 'react'
+import { AiTwotoneFolderOpen } from 'react-icons/ai'
 import { FiMapPin } from 'react-icons/fi'
+import { GrGithub, GrLinkedin, GrMail } from 'react-icons/gr'
 import { Element } from 'react-scroll'
 
 import { HASH_ROUTES } from '../../constants'
@@ -26,6 +28,12 @@ export default function Hero() {
           <Text size="md">
             <Icon as={FiMapPin} m={2} color="teal.400" />
             Houston, Texas
+          </Text>
+          <Text>
+            <Icon as={GrGithub} boxSize={8} m={2} color="teal.400" />
+            <Icon as={GrLinkedin} boxSize={8} m={2} color="teal.400" />
+            <Icon as={GrMail} boxSize={8} m={2} color="teal.400" />
+            <Icon as={AiTwotoneFolderOpen} boxSize={8} m={2} color="teal.400" />
           </Text>
         </Box>
       </Flex>
