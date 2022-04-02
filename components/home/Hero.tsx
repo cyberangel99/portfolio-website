@@ -30,10 +30,10 @@ export default function Hero() {
             Houston, Texas
           </Text>
           <Text>
-            <Icon as={GrGithub} boxSize={8} m={2} color="teal.400" />
-            <Icon as={GrLinkedin} boxSize={8} m={2} color="teal.400" />
-            <Icon as={GrMail} boxSize={8} m={2} color="teal.400" />
-            <Icon as={AiTwotoneFolderOpen} boxSize={8} m={2} color="teal.400" />
+            <Icon as={GrGithub} boxSize={8} m={2} color="purple.200" />
+            <Icon as={GrLinkedin} boxSize={8} m={2} color="linkedIn.300" />
+            <Icon as={GrMail} boxSize={8} m={2} color="teal.300" />
+            <Icon as={AiTwotoneFolderOpen} boxSize={8} m={2} color="orange.300" />
           </Text>
         </Box>
       </Flex>

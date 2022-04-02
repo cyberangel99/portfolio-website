@@ -29,30 +29,22 @@ export default function About() {
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={0}>
         <Flex h={{ base: 'auto' }} justifyContent="center" alignItems="flex-start" p={10}>
           <WhileInView>
-            <SectionTitle title="About Us" subtitle="Libero id faucibus nisl tincidunt." />
+            <SectionTitle title="About" subtitle="Coder, Gamer and Anime Nerd" />
             <Text my={4} lineHeight="2em">
-              Libero id faucibus nisl tincidunt. Bibendum neque egestas congue quisque egestas diam.
-              Felis eget nunc lobortis mattis aliquam faucibus purus. Eu facilisis sed odio morbi
-              quis. Nibh nisl condimentum id venenatis a.
+              Hello and welcome to my site! My name is Mary and I am a Front-End Web Developer. I am
+              originally from Northwest Ohio and I currently live in Houston, TX with my husband.
             </Text>
             <Text my={4} lineHeight="2em">
-              Libero id faucibus nisl tincidunt. Bibendum neque egestas congue quisque egestas diam.
-              Felis eget nunc lobortis mattis aliquam faucibus purus. Eu facilisis sed odio morbi
-              quis. Nibh nisl condimentum id venenatis a.
+              My husband and I are huge anime and gamer nerds! We also go to anime and game
+              conventions every year. We even have a game room to display our anime, games and
+              collectables to show our love for anime and gaming! I also like to travel, code,
+              collect videogames, eat Japanese food and ride my bike on the weekends. My personality
+              type is usually "laid-back".
             </Text>
             <Text my={4} lineHeight="2em">
-              Libero id faucibus nisl tincidunt. Bibendum neque egestas congue quisque egestas diam.
-              Felis eget nunc lobortis mattis aliquam faucibus purus. Eu facilisis sed odio morbi
-              quis. Nibh nisl condimentum id venenatis a.
+              I received a Web Client Developer Certificate in December 2018 at the College of
+              DuPage in Glen Ellyn, Illinois.
             </Text>
-            <Divider my={8} />
-            <HStack>
-              <SmoothScrollLink to={HASH_ROUTES.ABOUT}>
-                <Button colorScheme="accent" leftIcon={<FiChevronDown />}>
-                  OUR SERVICES
-                </Button>
-              </SmoothScrollLink>
-            </HStack>
           </WhileInView>
         </Flex>
         <Flex
