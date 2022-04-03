@@ -3,8 +3,7 @@ export const ROUTES = {
   ABOUT: '/about',
   SKILLS: '/skills',
   PROJECTS: '/projects',
-  CONTACT: '/contact',
-  POSTS: '/blog'
+  CONTACT: '/contact'
 }
 
 export const HASH_ROUTES = {
@@ -12,7 +11,6 @@ export const HASH_ROUTES = {
   ABOUT: 'about',
   SKILLS: 'skills',
   PROJECTS: 'projects',
-  RECENT_POSTS: 'recent-posts',
   CONTACT: 'contact'
 }
 
@@ -21,7 +19,6 @@ export const HASH_ROUTE_MENU_ITEMS = [
   { name: 'About', hash: HASH_ROUTES.ABOUT, color: 'primary' },
   { name: 'Skills', hash: HASH_ROUTES.SKILLS, color: 'primary' },
   { name: 'projects', hash: HASH_ROUTES.PROJECTS, color: 'primary' },
-  { name: 'Recent Posts', hash: HASH_ROUTES.RECENT_POSTS, color: 'primary' },
   { name: 'Contact', hash: HASH_ROUTES.CONTACT, color: 'primary' }
 ]
 

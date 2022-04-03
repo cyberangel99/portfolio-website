@@ -5,8 +5,7 @@ import {
   HStack,
   SimpleGrid,
   useColorModeValue,
-  useDisclosure,
-  Heading
+  useDisclosure
 } from '@chakra-ui/react'
 
 import { motion, useViewportScroll } from 'framer-motion'
@@ -14,7 +13,6 @@ import Link from 'next/link'
 
 import React, { useEffect, useState } from 'react'
 
-import ColorModeButton from '../shared/ColorModeButton'
 import Logo from '../shared/Logo'
 import MobileMenuButton from '../shared/MobileMenuButton'
 import PreviewBar from '../shared/PreviewBar'

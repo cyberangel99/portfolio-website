@@ -1,21 +1,10 @@
-import {
-  Flex,
-  SimpleGrid,
-  useColorModeValue,
-  Divider,
-  HStack,
-  Button,
-  Image,
-  Text
-} from '@chakra-ui/react'
+import { Flex, SimpleGrid, useColorModeValue, Image, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import React from 'react'
-import { FiChevronDown } from 'react-icons/fi'
 import { Element } from 'react-scroll'
 
 import { HASH_ROUTES } from '../../constants'
 import SectionTitle from '../shared/SectionTitle'
-import SmoothScrollLink from '../shared/SmoothScrollLink'
 import WhileInView from '../shared/WhileInView'
 
 export default function About() {
@@ -27,7 +16,12 @@ export default function About() {
   return (
     <Element name={HASH_ROUTES.ABOUT}>
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={0}>
-        <Flex h={{ base: 'auto' }} justifyContent="center" alignItems="flex-start" p={10}>
+        <Flex
+          h={{ sm: 'full', md: '100vh' }}
+          justifyContent="center"
+          alignItems="flex-start"
+          p={10}
+        >
           <WhileInView>
             <SectionTitle title="About" subtitle="Coder, Gamer and Anime Nerd" />
             <Text my={4} lineHeight="2em">
