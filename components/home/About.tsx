@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid, useColorModeValue, Image, Text } from '@chakra-ui/react'
+import { Flex, SimpleGrid, Image, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import React from 'react'
 import { Element } from 'react-scroll'
@@ -8,9 +8,6 @@ import SectionTitle from '../shared/SectionTitle'
 import WhileInView from '../shared/WhileInView'
 
 export default function About() {
-  const aboutImage = useColorModeValue('about.svg', 'about.svg')
-  const bg = useColorModeValue('gray.100', 'gray.600')
-
   const MotionImage = motion(Image)
 
   return (
@@ -43,20 +40,18 @@ export default function About() {
         </Flex>
         <Flex
           h={{ base: 'auto', lg: 'auto' }}
-          p={4}
           alignItems="center"
           justifyContent="center"
-          bg={bg}
           pos="relative"
           overflow="hidden"
         >
           <MotionImage
-            src={`/illustrations/${aboutImage}`}
+            src="/illustrations/about.svg"
+            background="linear-gradient(rgba(49, 151, 149,0.9),rgba(21, 127, 207,0.5))"
             alt="About"
             maxW="full"
             w="full"
             h="full"
-            maxH={400}
             zIndex={2}
             p={12}
             initial={{ opacity: 0, y: 20 }}
