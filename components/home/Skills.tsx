@@ -23,7 +23,7 @@ export default function Skills() {
   const MotionImage = motion(Image)
 
   return (
-    <Element name={HASH_ROUTES.ABOUT}>
+    <Element name={HASH_ROUTES.SKILLS}>
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={0}>
         <Flex
           h={{ base: 'auto', lg: 'auto' }}
@@ -35,7 +35,7 @@ export default function Skills() {
           <MotionImage
             src="/illustrations/skills.svg"
             background="linear-gradient(rgba(49, 151, 149,0.3),rgba(21, 127, 207,0.9))"
-            alt="About"
+            alt="Skills"
             maxW="full"
             w="full"
             h="full"
@@ -94,7 +94,7 @@ export default function Skills() {
                 </ListItem>
               </List>
               <Button colorScheme="teal" p={5} mt={5} size="sm">
-                Downlaod Resume
+                Download Resume
               </Button>
             </Box>
           </WhileInView>
