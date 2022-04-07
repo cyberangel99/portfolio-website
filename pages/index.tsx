@@ -2,11 +2,13 @@ import { NextSeo } from 'next-seo'
 import React from 'react'
 
 import About from '../components/home/About'
+import Contact from '../components/home/Contact'
 import Hero from '../components/home/Hero'
+import Projects from '../components/home/Projects'
+import Skills from '../components/home/Skills'
+
 import AppLayout from '../components/layouts/AppLayout'
-import CTA from '../components/shared/CTA'
-import Services from '../components/shared/Services'
-import Testimonials from '../components/shared/Testimonials'
+
 import { getPosts } from '../services/posts'
 
 export async function getStaticProps() {
@@ -33,9 +35,9 @@ export default function HomePage() {
       <AppLayout>
         <Hero />
         <About />
-        <Services />
-        <Testimonials />
-        <CTA />
+        <Skills />
+        <Projects />
+        <Contact />
       </AppLayout>
     </>
   )
