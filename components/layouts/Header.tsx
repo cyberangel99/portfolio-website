@@ -15,7 +15,6 @@ import React, { useEffect, useState } from 'react'
 
 import Logo from '../shared/Logo'
 import MobileMenuButton from '../shared/MobileMenuButton'
-import PreviewBar from '../shared/PreviewBar'
 
 import MobileNavigationMenu from './MobileNavigationMenu'
 
@@ -57,7 +56,6 @@ export default function Header() {
         }}
       >
         <Container maxW="100%" p={0}>
-          <PreviewBar />
           <SimpleGrid columns={{ base: 2 }} spacing={8} py={3} px={4}>
             <Flex justifyContent="start" alignItems="center">
               <Link href="/" passHref>

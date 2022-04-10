@@ -11,7 +11,7 @@ export default function NavigationMenu({ isSticky }) {
     <Box bg="transparent" borderRadius={5} borderLeftRadius={0}>
       <HStack justifyContent="center" alignItems="center">
         {HASH_ROUTE_MENU_ITEMS.map((hashItem) => (
-          <SmoothScrollLink to={hashItem.hash} scrollOffset={-50}>
+          <SmoothScrollLink key={hashItem.hash} to={hashItem.hash} scrollOffset={-50}>
             <Box key={hashItem.hash}>
               <Menu>
                 <MenuButton

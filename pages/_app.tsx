@@ -7,8 +7,6 @@ import { Provider } from 'react-redux'
 
 import { store } from '../state/store'
 import '../styles/app.scss'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 import chakraUITheme from '../utils/theme'
 
 export default function App({ Component, pageProps }: AppProps) {

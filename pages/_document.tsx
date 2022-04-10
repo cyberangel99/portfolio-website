@@ -22,11 +22,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&family=Oxanium:wght@300;400&display=swap"
             rel="stylesheet"
           />
-          <script
-            async
-            defer
-            src={`https://static.cdn.prismic.io/prismic.js?new=true&repo=${process.env.NEXT_PUBLIC_PRISMIC_REPO}`}
-          />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
