@@ -20,7 +20,7 @@ export default function About() {
           p={10}
         >
           <WhileInView>
-            <SectionTitle title="Skills" />
+            <SectionTitle title="About" />
             <Text my={4} lineHeight="2em">
               Hello and welcome to my site! My name is Mary and I am a Front-End Web Developer. I am
               originally from Northwest Ohio and I currently live in Houston, TX with my husband.
