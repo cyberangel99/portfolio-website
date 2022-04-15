@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Heading, Icon } from '@chakra-ui/react'
+import { Flex, Box, Text, Heading, Icon, Image } from '@chakra-ui/react'
 import React from 'react'
 import { AiTwotoneFolderOpen } from 'react-icons/ai'
 import { FiMapPin } from 'react-icons/fi'
@@ -20,7 +20,13 @@ export default function Hero() {
         color="gray.50"
       >
         <Box justifyContent="center" alignItems="center" textAlign="center">
-          <Text>Picture goes here</Text>
+          <Image
+            borderRadius="full"
+            boxSize="150px"
+            src="./images/mary-image.png"
+            alt="Mary Green"
+            display="inline-block"
+          />
           <Heading as="h1" size="3xl" color="teal.400" isTruncated>
             Mary Green
           </Heading>
