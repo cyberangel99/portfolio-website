@@ -7,7 +7,8 @@ import {
   List,
   ListItem,
   ListIcon,
-  Button
+  Button,
+  Link
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import React from 'react'
@@ -93,9 +94,14 @@ export default function Skills() {
                   Python
                 </ListItem>
               </List>
-              <Button colorScheme="teal" p={5} mt={5} size="sm">
-                Download Resume
-              </Button>
+              <Link
+                href="https://docs.google.com/document/d/1W8TguX53U9jCRtbAb3L_Eco8ow7UPSr4hYTTzOhd5RQ/edit?usp=sharing"
+                isExternal
+              >
+                <Button colorScheme="teal" p={5} mt={5} size="sm">
+                  Download Resume
+                </Button>
+              </Link>
             </Box>
           </WhileInView>
         </Flex>
