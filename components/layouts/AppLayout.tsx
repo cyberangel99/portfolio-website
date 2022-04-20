@@ -1,5 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react'
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect } from 'react'
 import { Element } from 'react-scroll'
 
 import BackToTop from '../shared/BackToTop'
@@ -8,6 +8,10 @@ import Footer from './Footer'
 import Header from './Header'
 
 export default function AppLayout({ children }: { children: ReactNode }) {
+  useEffect(() => {
+    localStorage.removeItem('chakra-ui-color-mode')
+  }, [])
+
   return (
     <Flex direction="row">
       <Element name="top" />
