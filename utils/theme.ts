@@ -181,7 +181,7 @@ const shadows = {
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
-  useSystemColorMode: true
+  useSystemColorMode: false
 }
 
 const components = {
