@@ -18,10 +18,10 @@ export default function Contact() {
           <Container maxW="container.xl" p={10}>
             <Flex my={8} justifyContent="center" direction="column" textAlign="left">
               <SectionTitle
-                title="Get In Touch"
+                title="Contact Me"
                 subtitle={
                   <Text>
-                    You can always email us directly at{' '}
+                    You can email me directly at{' '}
                     <Link
                       textDecor="underline"
                       title="Email us!"
@@ -29,7 +29,7 @@ export default function Contact() {
                     >
                       {process.env.NEXT_PUBLIC_EMAIL}
                     </Link>{' '}
-                    if you don't want to fill out our scary form.
+                    if you don't want to fill out this form.
                   </Text>
                 }
               />
