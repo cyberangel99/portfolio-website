@@ -53,7 +53,8 @@ export default function ContactForm() {
             phone: '',
             organization: '',
             message: '',
-            reason: ''
+            reason: '',
+            'form-name': FORM_NAME
           } as IContactPayload
         }
         validateOnMount
