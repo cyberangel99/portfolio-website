@@ -199,7 +199,10 @@ export default function ContactForm() {
                 delay={0.6}
               />
               {/* Netlify - Required hidden field */}
-              <Input type="hidden" value={FORM_NAME} />
+              <ContactField
+                name="form-name"
+                renderField={() => <Input type="hidden" value={FORM_NAME} name="form-name" />}
+              />
               <Box mt={8}>
                 <Button
                   leftIcon={<FiMail />}
