@@ -17,7 +17,8 @@ export const sendMessage = createAsyncThunk<any, any>(
   async (values: IContactPayload, thunkAPI) => {
     const { rejectWithValue } = thunkAPI
     try {
-      const response = await sendContact(values)
+      const encodedFormData = new URLSearchParams(values).toString()
+      const response = await sendContact(values, encodedFormData)
       return response
     } catch (error) {
       return rejectWithValue(error)
