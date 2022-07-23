@@ -89,10 +89,6 @@ export default function Skills() {
                   <ListIcon as={GoGear} color="blue.500" />
                   Less
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={GoGear} color="blue.500" />
-                  Python
-                </ListItem>
               </List>
               <Link
                 href="https://docs.google.com/document/d/1W8TguX53U9jCRtbAb3L_Eco8ow7UPSr4hYTTzOhd5RQ/edit?usp=sharing"
